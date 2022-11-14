@@ -24,7 +24,8 @@ const getQuote = async ()=>{
         let data = await fetch (api);
         realData = await data.json();
         newQuote()
-    } catch (error) {
+    } catch (err) {
+        console.log("by the some reason there is an error")
     }
 }
 getQuote()
